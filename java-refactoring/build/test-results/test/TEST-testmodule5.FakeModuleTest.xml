@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="testmodule5.FakeModuleTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-05-21T23:40:06" hostname="Daves-MacBook-Pro.local" time="0.016">
+  <properties/>
+  <testcase name="guestCheckout_Canada_English_CreditCard()" classname="testmodule5.FakeModuleTest" time="0.008"/>
+  <testcase name="searchStyleID_US_English()" classname="testmodule5.FakeModuleTest" time="0.003"/>
+  <testcase name="tryToInvokeUndefinedTestMethod()" classname="testmodule5.FakeModuleTest" time="0.004"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

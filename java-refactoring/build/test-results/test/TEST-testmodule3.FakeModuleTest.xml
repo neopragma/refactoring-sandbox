@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="testmodule3.FakeModuleTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-05-21T23:40:06" hostname="Daves-MacBook-Pro.local" time="0.001">
+  <properties/>
+  <testcase name="guestCheckout_Canada_English_CreditCard()" classname="testmodule3.FakeModuleTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
