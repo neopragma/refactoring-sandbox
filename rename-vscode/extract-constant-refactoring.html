@@ -1,0 +1,36 @@
+<h1>Refactoring the Hard Way, Part 3</h1>
+
+<p>In <a href="">Part 1</a>, we wrote a quick-and-dirty <em>rename</em> refactoring script in Bash, and a corresponding <em>undo</em> script. The goal was to get a feel for what's involved in performing a <em>rename</em> operation. </p>
+
+<p>In <a href="">Part 2</a>, we implemented the <em>rename</em> functionality as a VSCode extension. The goal was to understand approximately how difficult it would be to implement a VSCode extension to support <em>rename</em> refactorings, as well as to gain appreciation for the work others have done to write editor and IDE extensions and plugins to support refactoring. </p>
+
+<p>At the end of Part 2, we decided (well, I guess I decided for us) our next step would be to write an <em>extract constant</em> extension for VSCode. Let's get to it!</p>
+
+<h2>Extract Constant refactoring for VSCode</h2>
+
+<p>We need the user to select a literal - either a string literal or a numeric literal - and then choose <em>extract constant</em> (whatever "choose" means; probably a key mapping). What's interesting about that? Maybe these points, at least: </p>
+
+<ul>
+<li>an opportunity to explore a different part of the VSCode extension API;</li>
+<li>an opportunity to do text insertion rather than text replacement (something a little different, anyway); and  </li>
+<li>an opportunity to handle a language-specific refactoring; constants look different in different programming languages.</li>
+</ul>
+
+<h2>Steps in the <em>extract constant</em> process</h2>
+
+<p>To perform an <em>extract constant</em> refactoring: </p>
+
+<ol>
+<li>User selects a literal in the editor pane.</li>
+<li>User invokes the <em>extract constant</em> command.</li>
+<li>Extension prompts the user to enter a name for the new constant. </li>
+<li>User provides name.</li>
+<li>Extension inserts text in the current document declaring the constant. </li>
+<li>Extension replaces all occurrences of the literal in the document with the name of the constant.</li>
+</ol>
+
+<p>We'll start by generating a boilerplate extension just as we did for <em>rename</em>. We can dispense with showing those steps again, and with showing the generated boilerplate code. </p>
+
+<h3>Next steps</h3>
+
+<p>Vim is another popular lightweight editor for programming. It's a different type of editor from VSCode. Vim is a bimodal editor that comes from the pre-GUI days.In Part 4, we propose to write Vim plugins to perform <em>rename</em> and <em>extract constant</em> refactorings. Our goal is to see what more we can learn by working with a different text editor, with a very different design from VSCode. </p>
